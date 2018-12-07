@@ -71,3 +71,18 @@ The directory structure of your new project looks like this:
 │
 └── api            <- API wrapper around model bin
 ```
+
+### Sync data from S3
+
+To sync data from S3, use the following command. It will recursively sync files in data/ up to s3://DUMMY_BUCKET/<folder>/
+
+```sh
+make sync_data_to_s3
+```
+
+
+To sync data to S3, use the following command. It will recursively sync files from s3://DUMMY_BUCKET/<folder>/ to data/
+
+```sh
+make sync_data_from_s3
+```
