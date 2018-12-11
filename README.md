@@ -69,7 +69,11 @@ The directory structure of your new project looks like this:
 │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
 │       └── visualize.py
 │
-└── api            <- API wrapper around model bin
+├── online_scripts     <- Scripts to generate reports when model is online
+│
+│
+└── api                <- API wrapper around model bin
+
 ```
 
 ### Sync data from S3
